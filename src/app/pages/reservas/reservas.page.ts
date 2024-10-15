@@ -21,6 +21,55 @@ export class ReservasPage implements OnInit {
   distancia_metros: number = 0;
   tiempo_segundos: number = 0;
 
+  //Simulación de una lista de viajes ya creados: Eventualmente le cargan datos 
+  viajes: any[] = [{
+    "id": 1,
+    "conductor": "Lalo Cura",
+    "asientos_disponibles": 4,
+    "nombre_destino": "santa isabel sur, parque residencial monteandino, puente alto",
+    "latitud": -33.59,
+    "longitud": -70.53,
+    "distancia_metros": 5000,
+    "tiempo_segundos": 900,
+    "estado_viaje": "pendiente",
+    "pasajeros": []
+    },{
+    "id": 2,
+    "conductor": "Elba Lazo",
+    "asientos_disponibles": 3,
+    "nombre_destino": "santa isabel sur, parque residencial monteandino, puente alto",
+    "latitud": -33.59,
+    "longitud": -70.53,
+    "distancia_metros": 5000,
+    "tiempo_segundos": 900,
+    "estado_viaje": "en curso",
+    "pasajeros": [17888444,15999555]
+    },{
+    "id": 3,
+    "conductor": "Elvis Teck",
+    "asientos_disponibles": 0,
+    "nombre_destino": "santa isabel sur, parque residencial monteandino, puente alto",
+    "latitud": -33.59,
+    "longitud": -70.53,
+    "distancia_metros": 5000,
+    "tiempo_segundos": 900,
+    "estado_viaje": "terminado",
+    "pasajeros": [14888555]
+    },{
+      "id": 4,
+      "conductor": "Armando Casas",
+      "asientos_disponibles": 0,
+      "nombre_destino": "santa isabel sur, parque residencial monteandino, puente alto",
+      "latitud": -33.59,
+      "longitud": -70.53,
+      "distancia_metros": 5000,
+      "tiempo_segundos": 900,
+      "estado_viaje": "pendiente",
+      "pasajeros": [17888999,15444888,16555444,15555555]
+      }
+    
+    ];
+
   constructor() { }
 
   ngOnInit() {
